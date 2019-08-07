@@ -12,12 +12,12 @@ def dashboardView(request):
 
 def registerView(request):
 
-    if request.method == 'POST':
+     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect('login_url') #redirect user to login when account is created succesfully
-        else:
-            form = UserCreationForm()
+           form.save()
+           return redirect('login_url')
+     else:
+         form = UserCreationForm()
 
-    return render(request, 'registration/register.html', {'form':form})
+     return render(request,'registration/register.html', {'form':form})
