@@ -11,6 +11,6 @@ public==2019.4.13
 pytz==2019.1
 reverse==0.1.0
 self==2019.4.13
-sqlparse==0.3.0
+sqlparse==0.4.4
 virtualenv==16.7.2
 whitenoise==4.1.3
